@@ -707,6 +707,7 @@ button:hover {
   flex-wrap: wrap;   /* allows wrapping if screen is smaller */
   gap: 20px;         /* spacing between event cards */
   justify-content: center;
+  align-items: center;
 }
 
 .events {
