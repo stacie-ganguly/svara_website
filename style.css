@@ -716,6 +716,12 @@ button:hover {
   max-width: 32%;
 }
 
+.slide {
+  width:100%;
+  height:auto;
+  max-width: 100%;
+}
+
 /* Mobile view */
 @media (max-width: 768px) {
   .allEvents {
