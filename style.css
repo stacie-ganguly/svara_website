@@ -62,7 +62,7 @@ a:hover {
   background-size: cover;
   padding: 11px;
 }
-
+/*
 .bollywoodBackground,
 .mathPrepBackground,
 .testPrepBackground  {
@@ -79,6 +79,30 @@ a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 11px;
+}
+*/
+.bollywoodBackground,
+.mathPrepBackground,
+.testPrepBackground {
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 11px;
+  box-sizing: border-box;
+}
+
+.bannerContainer {
+  width: 100%;
+  max-width: 1300px; /* same width as nav bar */
+  margin: 0 auto;    /* center it */
+  display: flex;
+  justify-content: center;
 }
 
 
