@@ -722,6 +722,19 @@ button:hover {
   max-width: 100%;
 }
 
+.eventSection {
+  flex: 1;
+  min-width: 280px;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  background-color: #0d1f46;
+  color:#e1c70d;
+  width:100%
+}
+
+
 /* Mobile view */
 @media (max-width: 768px) {
   .allEvents {
