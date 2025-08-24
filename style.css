@@ -501,23 +501,31 @@ a:hover {
   color: lightgray;
 }
 
-.homeBackground,
+.homeBackgroundContainer,
 .bollywoodBackground,
 .mathPrepBackground,
 .testPrepBackground {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.homeBackground {
+  width: 100%;
+  max-width: 1500px; /* same max width as navbar container */
   background-position: center;
   height: 40vh;
   align-items: flex-start;
   justify-content: center;
   margin-bottom: 20px;
   color: #e1c70d;
-  width: 100%;
   display: flex;
   flex-direction: column;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 11px;
 }
+
 
 .homeBackground { background-image: url(svaraBanner.png); }
 .bollywoodBackground { background-image: url(bollywoodbBanner.png); }
@@ -678,6 +686,11 @@ button:hover {
 .circle h2,
 .circle h3 {
   color: #e1c70d;
+  margin-bottom: 6px;
+}
+
+.circle p {
+  margin-top: 0px;
 }
 
 .row {
