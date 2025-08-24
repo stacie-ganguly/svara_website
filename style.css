@@ -15,7 +15,6 @@ nav {
   align-items: center;
   margin-bottom: 10px;
   flex-wrap: wrap;
-  max-width: 1242%
 }
 
 ul.navBar {
@@ -68,8 +67,7 @@ a:hover {
 .mathPrepBackground,
 .testPrepBackground  {
   width: 100%;
-  max-width: 100%; 
-  margin: 0 auto;
+  max-width: 1242px;
   background-position: center;
   height: 40vh;
   align-items: flex-start;
