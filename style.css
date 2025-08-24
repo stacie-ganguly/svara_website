@@ -711,8 +711,8 @@ button:hover {
 .events {
   display: flex;
   flex-direction: column;
-  width: 32%;
-  min-width: 280px;
+  flex: 1 1 320px;
+  max-width: 32%;
   box-sizing: border-box;
 }
 
@@ -724,21 +724,22 @@ button:hover {
 
 .eventSection {
   width: 100%;
+  margin-top: 12px;
   padding: 20px;
   box-sizing: border-box;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   background-color: #0d1f46;
   color: #e1c70d;
-  margin-top: 12px;
 }
 
 @media (max-width: 768px) {
   .events {
-    width: 90%;
-    min-width: unset;
+    flex: 1 1 100%;
+    max-width: 90%;
   }
 }
+
 
 
 
