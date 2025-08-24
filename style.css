@@ -744,25 +744,6 @@ button:hover {
 
 
 
-@media (max-width: 768px) {
-  .sectionBlog {
-    flex-direction: column;
-    align-items: center;
-  }
-  .textContainer {
-    max-width: 90%;
-  }
-  .slider {
-    max-width: 90%;
-    justify-content: center;
-  }
-  .slide {
-    max-width: 50%;
-  }
-}
-
-
-
 
 
 #contact {
