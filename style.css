@@ -703,48 +703,43 @@ button:hover {
 
 .allEvents {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;   /* allows wrapping if screen is smaller */
-  gap: 20px;         /* spacing between event cards */
+  flex-wrap: wrap;
+  gap: 20px;
   justify-content: center;
-  align-items: center;
 }
 
 .events {
   display: flex;
   flex-direction: column;
-  max-width: 32%;
+  width: 32%;
+  min-width: 280px;
+  box-sizing: border-box;
 }
 
 .slide {
-  width:100%;
-  height:auto;
-  max-width: 100%;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .eventSection {
-  flex: 1;
-  min-width: 280px;
+  width: 100%;
   padding: 20px;
   box-sizing: border-box;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   background-color: #0d1f46;
-  color:#e1c70d;
-  width:100%
+  color: #e1c70d;
+  margin-top: 12px;
 }
 
-
-/* Mobile view */
 @media (max-width: 768px) {
-  .allEvents {
-    flex-direction: column;
-    align-items: center;
-  }
   .events {
-    max-width: 90%;
+    width: 90%;
+    min-width: unset;
   }
 }
+
 
 
 
