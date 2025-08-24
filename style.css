@@ -661,8 +661,6 @@ button:hover {
 }
 
 .circle {
-  width: 200px;
-  height: 200px;
   background-color: #16274b;
   border-radius: 50%;
   display: flex;
@@ -672,6 +670,10 @@ button:hover {
   color: white;
   padding: 20px;
   text-align: center;
+  min-height: 200px;
+  width: 200px;
+  aspect-ratio: 1 / 1;
+
 }
 .circle h2,
 .circle h3 {
