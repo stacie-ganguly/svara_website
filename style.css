@@ -62,25 +62,7 @@ a:hover {
   background-size: cover;
   padding: 11px;
 }
-/*
-.bollywoodBackground,
-.mathPrepBackground,
-.testPrepBackground  {
-  width: 100%;
-  max-width: 1242px;
-  background-position: center;
-  height: 40vh;
-  align-items: flex-start;
-  justify-content: center;
-  margin-bottom: 20px;
-  color: #e1c70d;
-  display: flex;
-  flex-direction: column;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 11px;
-}
-*/
+
 .bollywoodBackground,
 .mathPrepBackground,
 .testPrepBackground {
@@ -143,7 +125,7 @@ ul li {
 .sectionHome,
 .tagSection,
 .statement,
-.sectionTitle,
+
 .serviceSection,
 .sectionBlog,
 .section {
@@ -155,6 +137,34 @@ ul li {
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
+.sectionTitle {
+  flex: 1;
+  min-width: 280px;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  max-width: 1000px;
+  flex: 0 0 1000px;
+  margin: 0 auto;
+}
+.homeTitle {
+  text-align: center;
+  
+}
+
+.column {
+  flex: 0 0 400px;
+  max-width: 400px;
+
+}
+
+.side-by-side {
+  display: flex;
+  gap: 20px;
+  flex-wrap:wrap;
+  justify-content: center;
+}
 .sectionHome {
   background-color: #0d1f46;
   color: #ffffff;
@@ -174,8 +184,17 @@ ul li {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   margin-top: 10px;
 }
+
+.textRow  .section {
+  flex: 0 0 400px;
+  max-width: 400px;
+  text-align: center;
+  
+}
+
 
 #tagTitle {
   color: #e1c70d;
