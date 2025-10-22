@@ -1,4 +1,4 @@
-body {
+body{
   background-color: #FFFDD0;
   margin: 0;
   font-family: 'Times New Roman', Times, serif, sans-serif;
@@ -28,7 +28,8 @@ ul.navBar {
 li.navBar {
   margin: 0 15px;
 }
-a {
+
+.navTitle {
   text-decoration: none;
   color: #e1c70d;
   font-size: 1.2rem;
@@ -84,8 +85,8 @@ a:hover {
 
 .bannerContainer {
   width: 100%;
-  max-width: 100%; /* same width as nav bar */
-  margin: 0 auto;    /* center it */
+  max-width: 100%; 
+  margin: 0 auto;   
   display: flex;
   justify-content: center;
 }
@@ -157,59 +158,38 @@ ul li {
   
 }
 
-/*
-.column {
-  flex: 1 1 0;
-  max-width: 45%;
-  
-  box-sizing: border-box;
-
-}
-
-.column h3 {
-  word-break: break-word;
-  margin: 10px 0
-}
 
 .side-by-side {
   display: flex;
-  gap: 20px;
-  flex-wrap: nowrap;
-  justify-content: center;
-}
-*/
-
-.side-by-side {
-  display: flex;
-  gap: 2%;                 /* small, relative gap */
-  flex-wrap: nowrap;        /* never stack */
-  justify-content: center;  /* center columns */
+  gap: 2%;                 
+  flex-wrap: nowrap;        
+  justify-content: center;  
 }
 
 .column {
-  flex: 1 1 0;             /* columns grow/shrink equally */
-  width: 48%;               /* each column takes about half of container */
+  flex: 1 1 0;             
+  width: 48%;               
   box-sizing: border-box;  
 }
 
 .column h3 {
-  font-size: clamp(14px, 2vw, 18px); /* text scales on smaller screens */
+  font-size: clamp(14px, 2vw, 18px); 
   word-break: break-word;
   margin: 10px 0;
   text-align: center;
 }
 
-/* applies only on laptop/desktop screens */
+
 @media (min-width: 992px) {
   .side-by-side {
-    max-width: 1100px;   /* stop it from stretching edge to edge */
-    margin: 0 auto;      /* keep it centered */
-    padding: 0 20px;     /* add some breathing room on sides */
+    max-width: 1100px;   
+    margin: 0 auto;     
+    padding: 0 20px;     
   }
 
   .column {
-    max-width: 500px;    /* keeps each column from becoming too wide */
-    text-align: center;  /* center text inside */
+    max-width: 500px;    
+    text-align: center;  
   }
 }
 
@@ -400,12 +380,6 @@ button:hover {
     max-width: 90%;
   }
 }
-
-
-
-
-
-
 
 #contact {
   max-width: 500px;
