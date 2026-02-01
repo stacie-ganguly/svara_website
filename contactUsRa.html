@@ -9,38 +9,31 @@
 
     <body>
         <nav>
-            <ul class="navBar">
-                <li class="navBar"><img src="logoRa.png" width = "125"></li>
+            <div class="nav-header">
+                <img src="logoRa.png" class="logo" width="125">
+                <button class="menu-toggle" id="mobile-menu"> &#9776; </button>
+                </div>
+            <ul class="navBar" id="nav-list">
                 <li class="navBar"><a class="navTitle" href="index.html">Home</a></li>
                 <li class="navBar"><a class="navTitle" href="whoWeAreRa.html">Who we are</a></li>
                 <li class="navBar"><a class="navTitle" href="servicesRa.html">Services</a></li>
-                <li class="navBar"><a class="navTitle" href="blogPage.html">Blog</a></li>
+          <!--      <li class="navBar"><a class="navTitle" href="blogPage.html">Blog</a></li> -->
                 <li class="navBar"><a class="navTitle" href="contactUsRa.html">Contact Us</a></li>
             </ul>
         </nav>
-        <p></p>
-        <p></p>
+        
 
-        <h2 class="homeTitle">Useful Contacts</h2>
-        <div class="side-by-side">  
-            <div class="column">
-                <h4 class="section">Email: svara.pdx@gmail.com</h4>
-                <h4 class="section">Phone: 971-506-5949</h4>
-            </div> 
-                
-            <div class="column">    
-                <h4 class="section">Instagram: svara.pdx </h4>
-                <h4 class="section">Facebook: Svara PDX</h4>
-            </div>    
+        <div class="homeBackgroundContainer">
+            <div class="contactBackground">
+            </div>
         </div>
-    
         <p></p>
         
-        <div class="form">
+        <div class="form reveal">
             <section id="contact">
                 <h2>Whatapp/Messages Group Sign up</h2>
-                <p>Sign up here to join Svara's Whatapp/Messages group and recieve texts everytime we announce a new event!</p>
-                <form name= "contact" method="POST" data-netlify= "true" id="contactForm">
+                <p>Sign up here to join Svara's Whatsapp/Messages group and recieve texts everytime we announce a new event!</p>
+                <form  name= "contact" method="POST" data-netlify= "true" id="contactForm">
                     <input type="hidden" name="form-name" value="contact">
 
                     <label for="name">First Name:</label>
@@ -62,5 +55,61 @@
                 </form>
             </section>
         </div>
+        <p></p>
+        <footer class="main-footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logoRa.png" width="100" alt="Svara Logo">
+                    <p>Inspiring rhythm, impacting lives.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="whoWeAreRa.html">Who We Are</a>
+                    <a href="servicesRa.html">Services</a>
+                    <a href="contactUsRa.html">Contact Us</a>
+                </div>
+
+                <div class="footer-social">
+                    <h4>Connect With Us</h4>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/svara.pdx/" target="_blank" rel="noopener noreferrer"><img src="Insta.png"></a>
+                        <a href="https://www.facebook.com/profile.php?id=61577130610047" target="_blank" rel="noopener noreferrer"><img src="fb.png"></a>
+                        <p>💌 svara.pdx@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="footer-bottom">
+                 <p>&copy; 2026 Svara PDX. All Rights Reserved.</p>
+            </div>
+        </footer>
+        <script>
+            const menuBtn = document.getElementById('mobile-menu');
+            const navList = document.getElementById('nav-list');
+
+            menuBtn.addEventListener('click', () => {
+                navList.classList.toggle('active');
+            });
+
+            function reveal() {
+                var reveals = document.querySelectorAll(".reveal");
+
+                for (var i = 0; i < reveals.length; i++) {
+                    var windowHeight = window.innerHeight;
+                    var elementTop = reveals[i].getBoundingClientRect().top;
+                    var elementVisible = 150; // How many pixels of the element should be visible before it pops up
+
+                    if (elementTop < windowHeight - elementVisible) {
+                        reveals[i].classList.add("active");
+                    }
+                }
+            }
+
+            window.addEventListener("scroll", reveal);
+
+            reveal();
+        </script>  
     </body>
 </html>
