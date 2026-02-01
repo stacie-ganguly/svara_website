@@ -7,65 +7,103 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     </head>
 
-    <body>
+    <body class="whoWeAre">
         <nav>
-            <ul class="navBar">
-                <li class="navBar"><img src="logoRa.png" width = "125"></li>
-                <li class="navBar"><a href="index.html">Home</a></li>
-                <li class="navBar"><a href="whoWeAreRa.html">Who we are</a></li>
-                <li class="navBar"><a href="servicesRa.html">Services</a></li>
-                <li class="navBar"><a href="blogPage.html">Blog</a></li>
-                <li class="navBar"><a href="contactUsRa.html">Contact Us</a></li>
+            <div class="nav-header">
+                <img src="logoRa.png" class="logo" width="125">
+                <button class="menu-toggle" id="mobile-menu"> &#9776; </button>
+                </div>
+            <ul class="navBar" id="nav-list">
+                <li class="navBar"><a class="navTitle" href="index.html">Home</a></li>
+                <li class="navBar"><a class="navTitle" href="whoWeAreRa.html">Who we are</a></li>
+                <li class="navBar"><a class="navTitle" href="servicesRa.html">Services</a></li>
+          <!--      <li class="navBar"><a class="navTitle" href="blogPage.html">Blog</a></li> -->
+                <li class="navBar"><a class="navTitle" href="contactUsRa.html">Contact Us</a></li>
             </ul>
         </nav>
-<!--starting statement - bold and italic-->
-        <div class="statement">
-            <h3 id="mission-statement">Svara is a student-led nonprofit organization, striving to provide support and financial aid for children’s mental, emotional, and physical health. Here, we are passionate about helping children in any shape or way possible. </h3>
-        </div>
 
-        <p></p>
-<!--mission statement-->
-        <div class="section">
-            <h2>Our Mission</h2>
-            <p>
-                Our mission is to provide essential resources and support for children in need and raise awareness on children’s overall wellbeing. This includes their mental, emotional and physical health alongside their education. By leveraging the power of dance and education, we strive to raise financial aid for our cause while simultaneously fostering creativity through art and discipline of dance throughout our community. 
-            </p>
-        </div>
-        <p></p>
-<!--origin story-->
-        <div class="section">
-            <h2>What is Svara's Story?</h2>
-            <p>
-              Svara was founded from Stacie and Teju’s shared passion for dance and helping children. Trained in Indian Classical and Bollywood styles, they hope to share the joy, discipline, and culture of dance with their community. Stacie’s experience tutoring with a nonprofit and teaching at her academy deepened her belief in the power of encouragement and patience. Teju, a Kathak dancer for nearly a decade and a member of her school’s varsity team, sees dance as a language that connects people and culture. Their shared love for the art form inspired them to create a nonprofit dedicated to making a difference for children in Portland. And thus, Svara was born.
-            </p>
-        </div>
-        <p></p>
-<!--values-->
-        <div class="sectionTitle">
-            <h2>Our Values</h2>
-        </div>
-        <p></p>
-        <div class="row">
-            <div class="circle"> 
-                <h3>Creativity</h3>
-                    <p>Through dance, art, and other diverse creative programs, we foster imagination and creativity.</p>
-            </div>  
-            <div class="circle">      
-                <h3>Empowerment</h3>
-                    <p> We equip children with the physical, emotional, and academic skills to overcome challenges and build brighter futures.</p>
-            </div> 
-            <div class="circle">       
-                <h3>Integrity</h3>
-                    <p>In all our activities, we operate with full transparency, ensuring your trust through our commitment to give back to our community. </p>
+        <div class="homeBackgroundContainer">
+            <div class="aboutBackground">
             </div>
-            <div class="circle">        
-                <h3>Empathy</h3>
-                    <p>We create a safe and supportive environment where children and families feel heard and valued.</p>
-            </div>        
-        </div>  
+        </div>
         
-        <!--<h3>Here, at Svara, we believe every child has potential. By developing their strengths and learning to overcome challenges instead of shying away, we believe children can grow and thrive in any environment. </li>-->
-                
-                                             
+        <h2 class="homeTitle">Our Values</h2>
+        <!--meet the team maybe?-->  
+        <div class="values-grid">
+            <div class="glass-card value-item"><h3>Creativity</h3></div>
+            <div class="glass-card value-item"><h3>Empowerment</h3></div>
+            <div class="glass-card value-item"><h3>Integrity</h3></div>
+            <div class="glass-card value-item"><h3>Empathy</h3></div>
+        </div>
+    
+<!--mission statement-->
+        <div class="whoWeAreMission reveal">
+            <div class="mission-text-box reveal">
+                <h2>Our Mission</h2>
+                <p> <b>💙 Svara is a youth-led nonprofit dedicated to turning creativity into meaningful impact.</b></p>
+                <p>Through a variety of community-centered fundraisers—including dance workshops, events, and collaborative initiatives—we support pediatric cancer research and humanitarian aid organizations. Our work brings people together to celebrate culture, movement, and service while creating real change beyond our community.</p>
+            </div>
+            
+            <div class="mission-image-box">
+                <img src="cofounder2.jpg" alt="Svara Mission Image"> 
+            </div>
+        </div>
+        <p></p>
+
+        <p></p>  
+        <footer class="main-footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logoRa.png" width="100" alt="Svara Logo">
+                    <p>Inspiring rhythm, impacting lives.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="whoWeAreRa.html">Who We Are</a>
+                    <a href="servicesRa.html">Services</a>
+                    <a href="contactUsRa.html">Contact Us</a>
+                </div>
+
+                <div class="footer-social">
+                    <h4>Connect With Us</h4>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/svara.pdx/" target="_blank" rel="noopener noreferrer"><img src="Insta.png"></a>
+                        <a href="https://www.facebook.com/profile.php?id=61577130610047" target="_blank" rel="noopener noreferrer"><img src="fb.png"></a>
+                        <p>💌 svara.pdx@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="footer-bottom">
+                 <p>&copy; 2026 Svara PDX. All Rights Reserved.</p>
+            </div>
+        </footer> 
+        <script>
+            const menuBtn = document.getElementById('mobile-menu');
+            const navList = document.getElementById('nav-list');
+
+            menuBtn.addEventListener('click', () => {
+                navList.classList.toggle('active');
+            });
+            function reveal() {
+                var reveals = document.querySelectorAll(".reveal");
+
+                for (var i = 0; i < reveals.length; i++) {
+                    var windowHeight = window.innerHeight;
+                    var elementTop = reveals[i].getBoundingClientRect().top;
+                    var elementVisible = 150; // How many pixels of the element should be visible before it pops up
+
+                    if (elementTop < windowHeight - elementVisible) {
+                        reveals[i].classList.add("active");
+                    }
+                }
+            }
+
+            window.addEventListener("scroll", reveal);
+
+            reveal();
+        </script>                                         
     </body>
 </html>
