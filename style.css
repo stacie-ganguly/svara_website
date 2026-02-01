@@ -189,7 +189,7 @@ a:hover {
   width: 100%;
   max-width: 1500px; 
   background-position: center;
-  height: 50vh;
+  height: 40vh;
   align-items: flex-start;
   justify-content: center;
   margin-bottom: 20px;
@@ -208,7 +208,7 @@ a:hover {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 50vh;
+  height: 40vh;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
