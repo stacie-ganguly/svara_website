@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Contact Us - Svara</title>
+        <title>Who We Are - Svara</title>
         <link rel="stylesheet" href="style.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     </head>
 
-    <body>
+    <body class="whoWeAre">
         <nav>
             <div class="nav-header">
                 <img src="logoRa.png" class="logo" width="125">
@@ -15,47 +15,42 @@
                 </div>
             <ul class="navBar" id="nav-list">
                 <li class="navBar"><a class="navTitle" href="index.html">Home</a></li>
-                <li class="navBar"><a class="navTitle" href="whoWeAreRa.html">Who we are</a></li>
-                <li class="navBar"><a class="navTitle" href="servicesRa.html">Services</a></li>
+                <li class="navBar"><a class="navTitle" href="whoWeAre.html">Who we are</a></li>
+                <li class="navBar"><a class="navTitle" href="services.html">Services</a></li>
           <!--      <li class="navBar"><a class="navTitle" href="blogPage.html">Blog</a></li> -->
-                <li class="navBar"><a class="navTitle" href="contactUsRa.html">Contact Us</a></li>
+                <li class="navBar"><a class="navTitle" href="contactUs.html">Contact Us</a></li>
             </ul>
         </nav>
-        
 
         <div class="homeBackgroundContainer">
-            <div class="contactBackground">
+            <div class="aboutBackground">
+            </div>
+        </div>
+        
+        <h2 class="homeTitle">Our Values</h2>
+        <!--meet the team maybe?-->  
+        <div class="values-grid">
+            <div class="glass-card value-item"><h3>Creativity</h3></div>
+            <div class="glass-card value-item"><h3>Empowerment</h3></div>
+            <div class="glass-card value-item"><h3>Integrity</h3></div>
+            <div class="glass-card value-item"><h3>Empathy</h3></div>
+        </div>
+    
+<!--mission statement-->
+        <div class="whoWeAreMission reveal">
+            <div class="mission-text-box reveal">
+                <h2>Our Mission</h2>
+                <p> <b>💙 Svara is a youth-led nonprofit dedicated to turning creativity into meaningful impact.</b></p>
+                <p>Through a variety of community-centered fundraisers—including dance workshops, events, and collaborative initiatives—we support pediatric cancer research and humanitarian aid organizations. Our work brings people together to celebrate culture, movement, and service while creating real change beyond our community.</p>
+            </div>
+            
+            <div class="mission-image-box">
+                <img src="cofounder2.jpg" alt="Svara Mission Image"> 
             </div>
         </div>
         <p></p>
-        
-        <div class="form reveal">
-            <section id="contact">
-                <h2>Whatapp/Messages Group Sign up</h2>
-                <p>Sign up here to join Svara's Whatsapp/Messages group and recieve texts everytime we announce a new event!</p>
-                <form  name= "contact" method="POST" data-netlify= "true" id="contactForm">
-                    <input type="hidden" name="form-name" value="contact">
 
-                    <label for="name">First Name:</label>
-                    <input type="text" id="firstName" name="firstName" required />
-
-                    <label for="name">Last Name:</label>
-                    <input type="text" id="lastName" name="lastName" required />
-
-                    <label for="email">Phone Number:</label>
-                    <input type="text" id="phone" name="phone" required />
-
-                    <label for="message">Whatsapp or Messages</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-
-                    <input type="hidden" name="form-name" value="contact">
-
-                    <button type="submit">Submit</button>
-                    <p class="success-message" style="display:none;">Thanks! We received your submission.</p>
-                </form>
-            </section>
-        </div>
-        <p></p>
+        <p></p>  
         <footer class="main-footer">
             <div class="footer-content">
                 <div class="footer-logo">
@@ -84,7 +79,7 @@
             <div class="footer-bottom">
                  <p>&copy; 2026 Svara PDX. All Rights Reserved.</p>
             </div>
-        </footer>
+        </footer> 
         <script>
             const menuBtn = document.getElementById('mobile-menu');
             const navList = document.getElementById('nav-list');
@@ -92,7 +87,6 @@
             menuBtn.addEventListener('click', () => {
                 navList.classList.toggle('active');
             });
-
             function reveal() {
                 var reveals = document.querySelectorAll(".reveal");
 
@@ -110,6 +104,6 @@
             window.addEventListener("scroll", reveal);
 
             reveal();
-        </script>  
+        </script>                                         
     </body>
 </html>
